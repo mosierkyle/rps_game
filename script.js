@@ -57,10 +57,14 @@ function game(num) {
         let winner = rps(getPlayer(),getComputersChoice())
         if(winner == "player") {
             playerWins += 1;
+            console.log(`Score: ${playerWins} to ${computerWins}`);
         } else if(winner == "computer") {
             computerWins += 1;
+            console.log(`Score: ${playerWins} to ${computerWins}`);
+        } else {
+            num += 1;
+            console.log(`Still ${playerWins} to ${computerWins}`);
         }
-        console.log(`${playerWins} to ${computerWins}`);
     }
     if (playerWins > computerWins) {
         console.log(`YOU WIN! ${playerWins} to ${computerWins}`);
