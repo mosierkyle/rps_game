@@ -76,4 +76,3 @@ function game(num) {
 }
 
 //Calling the function 
-game(5);
