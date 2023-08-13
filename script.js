@@ -75,4 +75,18 @@ function game(num) {
     }
 }
 
-//Calling the function 
+//function that gets the amount of rounds the user wants to play;
+let roundBtn = document.querySelector('.round-button')
+roundBtn.addEventListener('click', () => {
+    let rounds = Number(document.querySelector('#round-input').value);
+    console.log(rounds);
+  });
+
+  
+
+
+
+
+
+
+
