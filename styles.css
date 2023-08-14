@@ -45,7 +45,7 @@
 }
 
 #buttons-div {
-    display:flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     gap: 1rem;
@@ -54,7 +54,7 @@
 }
 
 #score-div {
-    display:flex;
+    display: none;
     align-items: center;
     flex-direction: row;
     gap: 1rem;

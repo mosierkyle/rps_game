@@ -17,28 +17,30 @@
         <main>
             <div id="main-container">
                 <div class="game-div" id="rounds-div">
-                    <h4>How Many Rounds do you want to play?</h4>
+                    <h4>What do you want the max score to be?</h4>
                     <div id="rounds-input">
-                        <input type="Number">
-                        <button>Play</button>
+                        <input id="round-input" class="round-input" type="Number">
+                        <button class="round-button" id="round-button" onclick=startGame()>Play</button>
                     </div>
-                </div>
                 </div>
                 <div class="game-div" id="buttons-div">
                     <div id="round-count-div">
-                        <h2>ROUND 1</h2>
+                        <h2 id="what-round">ROUND 1</h2>
                     </div>
                     <div class="button">
-                        <button class="game-button">Rock</button>
-                        <button class="game-button">Paper</button>
-                        <button class="game-button">Scissors</button>
+                        <button id="rock" class="game-button" onclick=gameRock()>Rock</button>
+                        <button id="paper" class="game-button" onclick=gamePaper()>Paper</button>
+                        <button id="scissors" class="game-button" onclick=gameScissors()>Scissors</button>
+                    </div>
+                    <div id="round-result">
+                        <p id="round-result-p"></p>
                     </div>
                 </div>
                 <div class="game-div" id="score-div">
                     <div id="score">
-                        <h2>SCORE</h2>
+                        <h2 id="result">SCORE</h2>
                         <div id="game-score">
-                            <h4 id="player-score">Player:</h4>
+                            <h4 id="player-score">Player: </h4>
                             <h4 id="computer-score">Computer:</h4>
                         </div>
                     </div>
