@@ -1,4 +1,3 @@
-// function that will randomly return rock paper or scissors
 let maxScore;
 let winner;
 let pWins = 0;
@@ -35,7 +34,6 @@ function viewStart() {
     document.getElementById("score-div").style.display= "flex"; 
 };
 
-//function that plays the game 
 function rps(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         document.querySelector('#round-result-p').textContent = "It's a tie!"
